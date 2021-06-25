@@ -1,9 +1,10 @@
 version: '3.8'
 services:
     nodejs:
-        container_name: nodejs
+        container_name: vite-nodejs
         build:
             context: .
         ports:
             - 3000:3000
-        volumes: ./source:/app
+        volumes:
+            - ./source:/app
